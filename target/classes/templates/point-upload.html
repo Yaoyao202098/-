@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>断点上传</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<form>
+			<input type="file" id="fileInput" multiple>
+			<button type="button" id="uploadButton">上传</button>
+			<button type="button" id="pauseButton">暂停</button>
+			<button type="button" id="resumeButton">继续</button>
+		</form>
+		<script>
+			var fileInput = document.getElementById('fileInput')
+            var fileName;
+            var file;
+            var totalChunks;
+            var currentChunk = 0;
+            var chunkSize = 1024 * 1024 * 8; // 8MB分片大小
+            var isUploading = false;
+            var jqXHR;
+
+            fileInput.addEventListener('change', function (e) {
+                file = e.target.files[0];
+                fileName = file.name;
+                totalChunks = Math.ceil(file.size / chunkSize);
+                console.log(file)
+            });
+
+            function uploadChunk() {
+                if (currentChunk < totalChunks) {
+                    if (isUploading) {
+                        return; // 如果正在上传中，不执行下一块的上传
+                    }
+                    isUploading = true;
+                    var start = currentChunk * chunkSize;
+                    var end = Math.min(start + chunkSize, file.size);
+                    var chunk = file.slice(start, end);
+                    var formData = new FormData();
+                    formData.append('currentChunk', currentChunk);
+                    formData.append('totalChunks', totalChunks);
+                    formData.append('fileName', fileName);
+                    formData.append('chunk', chunk);
+
+                    jqXHR = $.ajax({
+                        type: 'POST',
+                        url: 'http://localhost:8080/file/pointUpload',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function () {
+                            console.log("成功上传" + currentChunk + "块");
+                            currentChunk++;
+                            isUploading = false;
+                            if (currentChunk < totalChunks) {
+                                uploadChunk();
+                            } else {
+                                mergeChunks();
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("上传失败" + error);
+                        }
+                    });
+                }
+            }
+
+            $('#uploadButton').click(function () {
+                if (!file) {
+                    alert('请选择文件');
+                    return;
+                }
+                currentChunk = 0;
+                uploadChunk();
+            });
+
+            $('#pauseButton').click(function () {
+                if (isUploading) {
+                    jqXHR.abort();
+                    isUploading = false;
+                }
+            });
+
+            $('#resumeButton').click(function () {
+                if (!file) {
+                    alert('请选择文件');
+                    return;
+                }
+                uploadChunk();
+            });
+
+            function mergeChunks() {
+                // 不需要在前端触发合并操作，这部分逻辑在后端处理
+                alert('文件上传完成');
+            }
+		</script>
+	</body>
+</html>

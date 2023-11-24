@@ -1,0 +1,53 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件断点下载</title>
+</head>
+<body>
+<h1>文件断点下载</h1>
+<button onclick="startDownload()">开始下载</button>
+</body>
+<script>
+    let startByte = 0;
+
+    function startDownload() {
+        fetch(`http://localhost:8080/file/chunkDownload?startByte=${startByte}`, {
+            method: 'GET',
+            headers: {
+                'Range': `bytes=${startByte}-`
+            }
+        })
+            .then(response => {
+                if (response.status === 206) {
+                    const contentRange = response.headers.get('Content-Range');
+                    const [, downloadedBytes, totalBytes] = /(\d+)-(\d+)\/(\d+)/.exec(contentRange);
+
+                    const blob = response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'downloaded_file.ext'; // 使用正确的文件名和扩展名
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+
+                    startByte = parseInt(downloadedBytes) + 1;
+
+                    if (startByte < totalBytes) {
+                        alert('继续下载，已下载字节数: ' + startByte);
+                        startDownload();
+                    } else {
+                        alert('下载完成');
+                        startByte = 0;
+                    }
+                } else {
+                    alert('下载失败');
+                }
+            })
+            .catch(error => {
+                alert('下载错误');
+            });
+    }
+</script>
+</html>

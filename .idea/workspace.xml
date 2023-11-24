@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6aa7623a-660f-4f6e-bda8-fa2165a97018" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/lw/controller/FileUploadController.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\ProgramFiles\maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../ProgramFiles/maven/apache-maven-3.8.7" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="D:\ProgramFiles\maven\apache-maven-3.8.7\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Vq83PKFrp2HfK0BkRzQak1mHR4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JAVA项目\files_Up_down\file" />
+      <recent name="E:\JAVA项目\files_Up_down\src\main\java\com\lw\service" />
+      <recent name="E:\JAVA项目\files_Up_down\src\main\resources\static" />
+      <recent name="E:\JAVA项目\files_Up_down\src\main\resources\static\plugins" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FilesUpDownApplication">
+    <configuration name="FilesUpDownApplicationTests.bufferStreamDemo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="files_Up_down" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lw" />
+      <option name="MAIN_CLASS_NAME" value="com.lw.FilesUpDownApplicationTests" />
+      <option name="METHOD_NAME" value="bufferStreamDemo1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUpDownApplicationTests.charStreamDemo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="files_Up_down" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lw" />
+      <option name="MAIN_CLASS_NAME" value="com.lw.FilesUpDownApplicationTests" />
+      <option name="METHOD_NAME" value="charStreamDemo1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUpDownApplicationTests.charStreamDemo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="files_Up_down" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lw" />
+      <option name="MAIN_CLASS_NAME" value="com.lw.FilesUpDownApplicationTests" />
+      <option name="METHOD_NAME" value="charStreamDemo2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUpDownApplicationTests.objectStreamDemo1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="files_Up_down" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lw" />
+      <option name="MAIN_CLASS_NAME" value="com.lw.FilesUpDownApplicationTests" />
+      <option name="METHOD_NAME" value="objectStreamDemo1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUpDownApplicationTests.objectStreamDemo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="files_Up_down" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lw" />
+      <option name="MAIN_CLASS_NAME" value="com.lw.FilesUpDownApplicationTests" />
+      <option name="METHOD_NAME" value="objectStreamDemo2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesUpDownApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="files_Up_down" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lw.FilesUpDownApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FilesUpDownApplicationTests.objectStreamDemo2" />
+        <item itemvalue="JUnit.FilesUpDownApplicationTests.objectStreamDemo1" />
+        <item itemvalue="JUnit.FilesUpDownApplicationTests.bufferStreamDemo1" />
+        <item itemvalue="JUnit.FilesUpDownApplicationTests.charStreamDemo2" />
+        <item itemvalue="JUnit.FilesUpDownApplicationTests.charStreamDemo1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6aa7623a-660f-4f6e-bda8-fa2165a97018" name="Changes" comment="" />
+      <created>1695552059024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695552059024</updated>
+      <workItem from="1695552061259" duration="7224000" />
+      <workItem from="1695628635901" duration="10152000" />
+      <workItem from="1695778282974" duration="536000" />
+      <workItem from="1695778884616" duration="9076000" />
+      <workItem from="1695803227364" duration="1523000" />
+      <workItem from="1695863385321" duration="2263000" />
+      <workItem from="1695900687867" duration="1035000" />
+      <workItem from="1696075826338" duration="595000" />
+      <workItem from="1696077137059" duration="541000" />
+      <workItem from="1696403804549" duration="1624000" />
+      <workItem from="1696659954576" duration="4790000" />
+      <workItem from="1696746353052" duration="4944000" />
+      <workItem from="1696760487938" duration="8245000" />
+      <workItem from="1696838511951" duration="5950000" />
+      <workItem from="1696847915411" duration="2185000" />
+      <workItem from="1696921259132" duration="7696000" />
+      <workItem from="1696946808986" duration="1478000" />
+      <workItem from="1697009232917" duration="3678000" />
+      <workItem from="1697018997144" duration="2941000" />
+      <workItem from="1697073926621" duration="13074000" />
+      <workItem from="1697161270145" duration="3742000" />
+      <workItem from="1697180586305" duration="3817000" />
+      <workItem from="1697196230788" duration="3507000" />
+      <workItem from="1697247385536" duration="14864000" />
+      <workItem from="1697443327278" duration="4979000" />
+      <workItem from="1697522716788" duration="9108000" />
+      <workItem from="1697594075978" duration="3943000" />
+      <workItem from="1697606909026" duration="9117000" />
+      <workItem from="1697617409483" duration="1171000" />
+      <workItem from="1697624156812" duration="3543000" />
+      <workItem from="1697698354967" duration="1423000" />
+      <workItem from="1697855302480" duration="1004000" />
+      <workItem from="1697871080386" duration="2433000" />
+      <workItem from="1698141221453" duration="1312000" />
+      <workItem from="1698149076668" duration="2526000" />
+      <workItem from="1698196306110" duration="26380000" />
+      <workItem from="1698282430847" duration="16801000" />
+      <workItem from="1698310136531" duration="10719000" />
+      <workItem from="1698369651543" duration="21290000" />
+      <workItem from="1698492157302" duration="3886000" />
+      <workItem from="1698568489637" duration="2962000" />
+      <workItem from="1698653424248" duration="9014000" />
+      <workItem from="1698670237227" duration="695000" />
+      <workItem from="1698729108176" duration="12214000" />
+      <workItem from="1698807328645" duration="270000" />
+      <workItem from="1699339749311" duration="1846000" />
+      <workItem from="1699407071917" duration="12961000" />
+      <workItem from="1699493401573" duration="1488000" />
+      <workItem from="1699534433778" duration="407000" />
+      <workItem from="1699579024474" duration="16099000" />
+      <workItem from="1699606766784" duration="74000" />
+      <workItem from="1699627546464" duration="4408000" />
+      <workItem from="1699632812813" duration="326000" />
+      <workItem from="1699633149956" duration="438000" />
+      <workItem from="1699633598168" duration="482000" />
+      <workItem from="1699665981491" duration="11782000" />
+      <workItem from="1699688030677" duration="18196000" />
+      <workItem from="1699715287383" duration="143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.aliyun.oss.common.auth.InvalidCredentialsException" package="com.aliyun.oss.common.auth" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

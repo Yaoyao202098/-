@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/file/lw.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lw/service/FileUploadService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/lw/utils/FileDownloadUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/lw/FilesUpDownApplicationTests.java" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

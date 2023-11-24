@@ -1,0 +1,120 @@
+一：
+创建数据库：CREATE DATABASE if not exists  itheima default CHARSET utf8mb4
+显示所有数据库：SHOW DATABASES
+删除数据库：DROP DATABASE if EXISTS itheima
+使用数据库：USE itheima
+查看当前使用的数据库：SELECT DATABASE()
+查看当前数据库的所有表：SHOW TABLES
+查看表结构：DESC 表名
+创建表：
+CREATE TABLE tb_user(
+id int  comment '编号',
+name varchar(50) comment '姓名',
+age int comment '年龄',
+gender varchar(1) comment '性别'   
+)comment '用户表';    // 最后一个字段没有逗号
+员工表：
+CREATE TABLE emp (
+	id INT COMMENT '编号',
+	workno VARCHAR ( 10 ) COMMENT '员工号',
+	NAME VARCHAR ( 10 ) COMMENT '姓名',
+	gender CHAR ( 1 ) COMMENT '性别',
+	age TINYINT UNSIGNED COMMENT '年龄',
+  idcard CHAR ( 18 ) COMMENT '身份证号' ,
+	entrytime date COMMENT '入职时间' 
+) COMMENT '员工表';
+二：
+①添加字段:
+ALTER TABLE emp ADD nickname VARCHAR ( 20 ) COMMENT '昵称';
+②修改字段名和字段类型:
+ALTER TABLE emp CHANGE NAME(旧字段名) name (新字段名)VARCHAR(10) COMMENT '名字'; 
+③修改数据类型：
+alter TABLE emp MODIFY name VARCHAR (30);
+④删除字段：
+ALTER TABLE emp drop nickname;
+⑤修改表名：
+ALTER TABLE emp RENAME TO employee;
+⑥删除表tt：
+drop table if exists tt;
+⑦删除表并重新创建该表(会保留字段名)：
+truncate TABLE tt;
+三:（insert,update,delete）
+(1):
+①插入数据:
+INSERT INTO employee(id,workno,name,gender,age,idcard,entrytime) VALUES(1,'1','小伟','男',22,'123456789012345678','1999-12-23');
+查看表的所有内容:
+SELECT * FROM employee;
+②向表中所有字段插入内容(内容必须与表中字段顺序对应):
+INSERT INTO employee VALUES (3,'3','小张','男',22,'123456789012345678','2000-6-24');
+③插入多条内容:
+INSERT INTO employee VALUES (4,'4','小明','男',18,'123456789012345678','2005-5-24'),(5,'5','小王','女',29,'123456789012345678','2004-6-24');
+(2):
+①修改数据：
+UPDATE employee SET name='小黄' WHERE id=3;//将id为3的name修改为小黄（不带where则修改全部字段）
+②UPDATE employee SET name='小张',gender='女' WHERE id=3;
+(3):
+①删除数据:
+//如果删除某个字段数据,则用update将该值设为NULL
+DELETE FROM employee WHERE gender='女';//删除为女的性别
+四(基本查询)
+(1)基本查询
+①查询字段name,workno,age：
+SELECT name,workno,age FROM employee
+SELECT name,workno as'工号',age FROM employee//workno字段名将变为工号
+②查询年龄(不重复):
+SELECT DISTINCT age FROM employee
+(2)条件查询
+①查询年龄等于22岁的员工：
+SELECT *from employee WHERE age=22
+②查询年龄不等于22岁的员工:
+SELECT *from employee WHERE age<>22
+③查询年龄在20-22之间的员工:
+SELECT *FROM employee WHERE age>=20 and age<=22
+SELECT *FROM employee WHERE age BETWEEN 20 and 22
+④查询年龄小于22的女员工：
+SELECT *FROM employee WHERE gender='女' and age<=22
+⑤查询年龄为18或21或29的员工：
+SELECT *FROM employee WHERE age in(18,21,29);
+⑥查询名字是两个字的名字：
+SELECT *FROM employee WHERE name LIKE '__';//两个下划线（一个下划线占一个字符）
+⑦查询idcard最后一个数字为8的员工：
+SELECT *FROM employee WHERE idcard LIKE '%8';(%占前面的全部字符)
+(3)聚合函数
+①统计员工总数:
+SELECT count(*) FROM employee
+②统计员工平均（最大）年龄：
+SELECT avg(age) from employee//最大:avg改为max
+③统计性别为男的年龄之和:
+SELECT sum(age) FROM employee WHERE gender='男'
+(4)分组查询（group by）
+①根据性别分组,统计男员工和女员工的数量:
+SELECT gender,count(*) FROM employee GROUP BY gender
+②根据性别分组,统计男员工和女员工的平局年龄:
+SELECT gender,avg(age) FROM employee GROUP BY gender
+③查询年龄小于22的员工,并根据性别分组,获取员工数量大于或等于3的性别:
+SELECT gender,count(*) FROM employee where age<23 GROUP BY gender HAVING count(*)>=2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
